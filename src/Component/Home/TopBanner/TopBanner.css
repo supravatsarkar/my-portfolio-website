@@ -1,13 +1,17 @@
-.container-custom{
-    /* display: grid;
-    grid-template-columns: repeat(1fr auto); */
-    /* border: 2px solid black; */
-    background-color: rgba(0, 0, 0, 0.973);
+.bg-image{
+    /* background-color: red; */
     background-image: url(../../../images/bg-top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+.container-custom{
+    /* display: grid;
+    grid-template-columns: repeat(1fr auto); */
+    /* border: 2px solid black; */
+    background-color: rgba(0, 0, 0, 0.363);
+    
 }
 .box{
     /* border: 2px solid red; */
