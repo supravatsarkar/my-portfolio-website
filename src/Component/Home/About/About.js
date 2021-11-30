@@ -3,6 +3,12 @@ import photo from '../../../images/about.jpg'
 import { BsFacebook } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    offset: 100,
+    duration: 2000,
+});
 
 const About = () => {
     return (
@@ -19,13 +25,13 @@ const About = () => {
                         </p>
                         <p>Currently I learning MERN stack Development.</p>
                         <div>
-                            <a href="https://www.facebook.com/supravat.sarkar" class="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer">
+                            <a href="https://www.facebook.com/supravat.sarkar" class="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer" data-aos="fade-right">
                                 <BsFacebook />
                             </a>
-                            <a href="https://www.linkedin.com/in/supravat-sarkar-4660161b9/" class="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/supravat-sarkar-4660161b9/" class="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer" data-aos="zoom-in-up">
                                 <BsLinkedin />
                             </a>
-                            <a href="https://github.com/supravatsarkar" class="text-decoration-none text-light fs-2 " target="_blank" rel="noreferrer">
+                            <a href="https://github.com/supravatsarkar" class="text-decoration-none text-light fs-2 " target="_blank" rel="noreferrer" data-aos="fade-up-right">
                                 <BsGithub />
                             </a>
 

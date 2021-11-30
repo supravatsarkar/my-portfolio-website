@@ -1,12 +1,18 @@
 import React from 'react';
 import developer from '../../../images/developer.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init({
+    offset: 250,
+    duration: 1200,
+});
 
 const Skills = () => {
     return (
         <div className="my-5 text-white container">
             <div className="row m-0">
                 <div className="col-12 col-md-4 d-flex align-items-center ">
-                    <div className="mx-2 my-2">
+                    <div className="mx-2 my-2" data-aos="fade-right">
                         <h1>I working in 3+ real world project with Based On MERN </h1>
                     </div>
                 </div>
@@ -16,7 +22,7 @@ const Skills = () => {
                     </div>
                 </div>
                 <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div className="mx-2 my-2 d-flex flex-column align-items-start justify-content-center w-100">
+                    <div className="mx-2 my-2 d-flex flex-column align-items-start justify-content-center w-100" data-aos="fade-left">
                         <h6>HTML</h6>
                         <div class="progress w-100 bg-dark mb-3" style={{ height: '10px' }}>
                             <div class="progress-bar bg-light" role="progressbar" style={{ width: '75%' }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
