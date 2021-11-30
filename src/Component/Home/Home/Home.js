@@ -1,24 +1,28 @@
 import React, { useState } from 'react';
 import Skills from '../Skills/Skills';
 import TopBanner from '../TopBanner/TopBanner';
-import { BoxesLoader } from "react-awesome-loaders";
+import { WifiLoader } from "react-awesome-loaders";
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
     window.addEventListener('load', (event) => {
-        setLoading(false)
+        setTimeout(() => { setLoading(false) }, 2000);
         console.log('page is fully loaded');
     });
     return (
         <div >
             {
                 loading ?
-                    <BoxesLoader className='mx-auto'
-                        boxColor={"#6366F1"}
-                        style={{ marginBottom: "20px" }}
-                        desktopSize={"128px"}
-                        mobileSize={"80px"}
-                    />
+                    <div className="d-flex justify-content-center align-items-center min-vh-100">
+                        <WifiLoader
+                            background={"transparent"}
+                            desktopSize={"150px"}
+                            mobileSize={"150px"}
+                            text={""}
+                            backColor="#E8F2FC"
+                            frontColor="#4645F6"
+                        />
+                    </div>
                     :
                     <div style={{ height: '2000px', backgroundColor: '#2B1EC2' }}>
                         <TopBanner></TopBanner>
