@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Skills from '../Skills/Skills';
 import TopBanner from '../TopBanner/TopBanner';
 import { WifiLoader } from "react-awesome-loaders";
+import Projects from '../Projects/Projects';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -24,9 +25,10 @@ const Home = () => {
                         />
                     </div>
                     :
-                    <div style={{ height: '2000px', backgroundColor: '#2B1EC2' }}>
+                    <div style={{ minHeight: '3000px', backgroundColor: '#2B1EC2' }}>
                         <TopBanner></TopBanner>
                         <Skills></Skills>
+                        <Projects></Projects>
                     </div>
             }
 
