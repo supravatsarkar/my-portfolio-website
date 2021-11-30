@@ -14,7 +14,7 @@ const Projects = () => {
                         <div class="card-body text-primary">
                             <h5 class="card-title">Dazzle Watch</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Details View</a>
+                            <a href="#" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const Projects = () => {
                         <div class="card-body text-primary">
                             <h5 class="card-title">Travel Bea</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Details View</a>
+                            <a href="#" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const Projects = () => {
                         <div class="card-body text-primary">
                             <h5 class="card-title">Dental House</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Details View</a>
+                            <a href="#" class="btn btn-primary">View Details</a>
                         </div>
                     </div>
                 </div>

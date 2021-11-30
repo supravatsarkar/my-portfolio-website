@@ -4,11 +4,12 @@ import TopBanner from '../TopBanner/TopBanner';
 import { WifiLoader } from "react-awesome-loaders";
 import Projects from '../Projects/Projects';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
     window.addEventListener('load', (event) => {
-        setTimeout(() => { setLoading(false) }, 2000);
+        setTimeout(() => { setLoading(false) }, 2500);
         console.log('page is fully loaded');
     });
     return (
@@ -31,6 +32,7 @@ const Home = () => {
                         <Skills></Skills>
                         <Projects></Projects>
                         <About></About>
+                        <Contact></Contact>
                     </div>
             }
 
