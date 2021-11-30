@@ -7,14 +7,17 @@
     background-attachment: fixed;
 }
 .container-custom{
-    /* display: grid;
-    grid-template-columns: repeat(1fr auto); */
-    /* border: 2px solid black; */
+    
     background-color: rgba(0, 0, 0, 0.363);
     
 }
 .font-ubuntu{
     font-family: 'Roboto', sans-serif;
+  }
+  .font-nunito{
+    font-family: 'Nunito', sans-serif;
+/* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    font-weight: 300;
   }
 .box{
     /* border: 2px solid red; */
