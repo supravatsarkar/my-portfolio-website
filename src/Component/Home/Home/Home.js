@@ -5,6 +5,7 @@ import { WifiLoader } from "react-awesome-loaders";
 import Projects from '../Projects/Projects';
 import About from '../About/About';
 import Contact from '../Contact/Contact';
+import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
@@ -33,6 +34,7 @@ const Home = () => {
                         <Projects></Projects>
                         <About></About>
                         <Contact></Contact>
+                        <Footer></Footer>
                     </div>
             }
 
