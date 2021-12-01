@@ -1,15 +1,12 @@
-import React from 'react';
-import project1 from '../../../images/projects/project-1.png'
-import project2 from '../../../images/projects/project-2.png'
-import project3 from '../../../images/projects/project-3.png'
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-    offset: 250,
+    offset: 200,
     duration: 1200,
 });
-
 const projects = [
     {
         id: 1,
@@ -84,34 +81,60 @@ const projects = [
         After login you can not access login and register route.
         After login you see user photo and name/email id.`,
         images: [
-            'https://i.ibb.co/PmmJbBc/project-3.png'
+            'https://i.ibb.co/PmmJbBc/project-3.png',
+            'https://i.ibb.co/PmmJbBc/project-3.png',
+            'https://i.ibb.co/PmmJbBc/project-3.png',
+            'https://i.ibb.co/PmmJbBc/project-3.png',
         ]
     }
 ]
 
-const Projects = () => {
+const ProjectDetails = () => {
+    const { projectId } = useParams();
+    const [project, setProject] = useState({});
+
+    useEffect(() => {
+        const findProject = projects.find(project => project.id == projectId);
+        // console.log('from project details-', projects, projectId);
+        setProject(findProject);
+    }, [projectId])
     return (
-        <div className="my-5 text-white container">
-            <h2 className="mb-3 mt-5">My Projects</h2>
-            <div className="container row m-0">
-                {
-                    projects.map(project => <div
-                        key={project.id}
-                        className="col-12 col-md-4 " data-aos="flip-right">
-                        <div className="card border border-0 my-3" >
-                            <img src={project.images[0]} className="card-img-top img-fluid shadow " alt="..." />
-                            <div className="card-body text-primary">
-                                <h5 className="card-title">{project.name}</h5>
-                                <p className="card-text">{project.description}</p>
-                                <Link to={`/projects/${project.id}`}>View Details</Link>
-                            </div>
-                        </div>
+        <div className="container text-light py-5">
+            <div>
+                <h2 className="">Project Name: {project?.name}</h2>
+                <p>{project?.description}</p>
+                <h2>Technology Use</h2>
+                <p>{project?.technologyUse}</p>
+                <h2>Features</h2>
+                <p>{project?.feature}</p>
+                <div>
+                    <a href={project?.liveSite} className="text-warning m-4" target="_blank" rel="noreferrer">Live Website</a>
+                    <a href={project?.clientSideRepo} className="text-warning m-4" target="_blank" rel="noreferrer">Client Side Repo</a>
+                    {
+                        project?.serverSideRepo && <a href={project?.serverSideRepo} className="text-warning m-4" target="_blank" rel="noreferrer">Server Side Repo</a>
+                    }
+                </div>
+                <div className="container ">
+                    <h2 className="mt-3">Screenshots</h2>
+                    <div className="row border border-2 border-warning p-4 rounded">
+                        {
+                            project?.images?.map((image, indx) => <div
+                                key={indx}
+                                class="col-12 col-md-6 col-lg-4">
+                                <div className="m-3" data-aos="flip-left">
+                                    <img className="img-fluid" src={image} alt="" />
+                                </div>
+                            </div>)
+                        }
                     </div>
-                    )
-                }
+                </div>
             </div>
+            <Link to="/home">
+                <button className="btn btn-primary">Go to Home</button>
+            </Link>
+
         </div>
     );
 };
 
-export default Projects;
+export default ProjectDetails;
