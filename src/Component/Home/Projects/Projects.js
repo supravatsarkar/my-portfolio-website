@@ -13,9 +13,9 @@ const Projects = () => {
     return (
         <div className="my-5 text-white container">
             <h2 className="mb-3 mt-5">My Projects</h2>
-            <div className="row m-0">
-                <div className="col-12 col-md-4 " >
-                    <div class="card border border-0 my-3" data-aos="zoom-in-right">
+            <div className="container row m-0">
+                <div className="col-12 col-md-4 " data-aos="flip-right">
+                    <div class="card border border-0 my-3" >
                         <img src={project1} class="card-img-top img-fluid shadow " alt="..." />
                         <div class="card-body text-primary">
                             <h5 class="card-title">Dazzle Watch</h5>
@@ -24,8 +24,8 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-4">
-                    <div class="card border border-0 my-3" data-aos="zoom-in-up">
+                <div className="col-12 col-md-4" data-aos="flip-left">
+                    <div class="card border border-0 my-3" >
                         <img src={project2} class="card-img-top img-fluid shadow" alt="..." />
                         <div class="card-body text-primary " >
                             <h5 class="card-title">Travel Bea</h5>
@@ -34,8 +34,8 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-4 rounded shadow">
-                    <div class="card border border-0 my-3" data-aos="zoom-in-left">
+                <div className="col-12 col-md-4 rounded " data-aos="flip-right">
+                    <div class="card border border-0 my-3" >
                         <img src={project3} class="card-img-top img-fluid shadow" alt="..." />
                         <div class="card-body text-primary">
                             <h5 class="card-title">Dental House</h5>

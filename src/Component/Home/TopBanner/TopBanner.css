@@ -23,8 +23,3 @@
     /* border: 2px solid red; */
     min-height: 100vh;
 }
-
-:root {
-    --animate-duration: 3s;
-  }
-  

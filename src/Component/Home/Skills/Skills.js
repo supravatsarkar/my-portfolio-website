@@ -10,19 +10,19 @@ AOS.init({
 const Skills = () => {
     return (
         <div className="my-5 text-white container">
-            <div className="row m-0">
+            <div className="container row m-0">
                 <div className="col-12 col-md-4 d-flex align-items-center ">
-                    <div className="mx-2 my-2" data-aos="fade-right">
+                    <div className="mx-2 my-2" data-aos="flip-right">
                         <h1>I working in 3+ real world project with Based On MERN </h1>
                     </div>
                 </div>
                 <div className="col-12 col-md-4 d-flex align-items-center ">
-                    <div className="mx-2 my-2">
+                    <div className="mx-2 my-2" data-aos="slide-up">
                         <img className="w-100 rounded shadow" src={developer} alt="" />
                     </div>
                 </div>
                 <div className="col-12 col-md-4 d-flex align-items-center justify-content-center">
-                    <div className="mx-2 my-2 d-flex flex-column align-items-start justify-content-center w-100" data-aos="fade-left">
+                    <div className="mx-2 my-2 d-flex flex-column align-items-start justify-content-center w-100" data-aos="flip-left">
                         <h6>HTML</h6>
                         <div class="progress w-100 bg-dark mb-3" style={{ height: '10px' }}>
                             <div class="progress-bar bg-light" role="progressbar" style={{ width: '75%' }} aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
