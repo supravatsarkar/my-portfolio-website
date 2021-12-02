@@ -10,7 +10,7 @@ AOS.init({
 
 const TopBanner = () => {
     return (
-        <div className="bg-image font-ubuntu ">
+        <div className="bg-image font-ubuntu " id="top-banner">
             <div className="container-custom ">
                 <div className="container row m-0 mx-auto">
                     <div className="col box d-none d-md-block col-md-2 col-lg-3"></div>
@@ -21,7 +21,7 @@ const TopBanner = () => {
                             <h3 className=" " data-aos="fade-up" data-aos-delay="200" data-aos-offset='10'>Junior Frontend Developer</h3>
                             <p className="" data-aos="fade-up" data-aos-delay="400" data-aos-offset='10'>I am a self taught Computer Programmer and Frontend Developer. Passionate about coding and also fell well to fixed bugs.
                             </p>
-                            <a href="https://drive.google.com/file/d/1hCikE7sq7TiKjDdSBy6p4BxQurDMPyYR/view?usp=sharing" target='_blank' rel='noreferrer'>
+                            <a href="https://drive.google.com/file/d/1YcEmXIJa0B_SpfMTHQ2JSv0PWHJitgVl/view?usp=sharing" target='_blank' rel='noreferrer'>
                                 <button type="button" className="btn btn-primary " data-aos="zoom-in-up" data-aos-delay="600" data-aos-offset='10'>Download Resume</button>
                             </a>
                         </div>

@@ -1,25 +1,28 @@
 import React from 'react';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Navigation = () => {
     return (
         <div>
-            <nav class="fixed-top navbar navbar-expand-lg navbar-dark shadow">
-                <div class="container-fluid">
-                    {/* <a class="navbar-brand" href="#">Navbar</a> */}
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
+                <div className="container-fluid">
+                    {/* <a className="navbar-brand" href="#">Navbar</a> */}
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item border border-1 rounded me-2">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item border border-1 rounded">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
+                    <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
+                        <div className="navbar-nav ms-auto">
+                            < NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" aria-current="page" to="/home#top-banner" style={{ textDecoration: 'none' }} activeClassName="selected"
+                                activeStyle={{ color: 'red' }}>Home</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#skills" style={{ textDecoration: 'none' }} >Skills</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#projects" style={{ textDecoration: 'none' }} activeClassName="selected"
+                                activeStyle={{ color: 'red' }}>Projects</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#about" style={{ textDecoration: 'none' }} activeClassName="selected"
+                                activeStyle={{ color: 'red' }}>About</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#contact" style={{ textDecoration: 'none' }} activeClassName="selected"
+                                activeStyle={{ color: 'red' }}>Contact</NavHashLink>
 
-                        </ul>
-
+                        </div>
                     </div>
                 </div>
             </nav>

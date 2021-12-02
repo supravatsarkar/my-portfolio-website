@@ -91,7 +91,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <div className="my-5 text-white container">
+        <div className="my-5 text-white container" id="projects">
             <h2 className="mb-3 mt-5">My Projects</h2>
             <div className="container row m-0">
                 {

@@ -20,7 +20,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container" id="contact">
             <div className="row m-0">
                 <div className="col d-none d-md-block col-md-2 "></div>
                 <div className="mx-2 m-md-0 d-flex align-items-center col col-md-8 ">

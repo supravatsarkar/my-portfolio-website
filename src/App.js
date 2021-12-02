@@ -19,7 +19,7 @@ function App() {
     console.log('page is fully loaded');
   });
   return (
-    <div style={{ background: '#324370' }}>
+    <div >
       {
         loading ? <div className="d-flex justify-content-center align-items-center min-vh-100">
           <WifiLoader
@@ -31,7 +31,7 @@ function App() {
             frontColor="#4645F6"
           />
         </div>
-          : <div className="App">
+          : <div className="App" style={{ background: '#324370' }}>
             <BrowserRouter>
               <Navigation></Navigation>
               <Routes>

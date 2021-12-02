@@ -9,7 +9,8 @@ AOS.init({
 
 const Skills = () => {
     return (
-        <div className="my-5 text-white container">
+        <div className="my-5 text-white container" id="skills">
+            <h2 data-aos="slide-up">Key Skills</h2>
             <div className="container row m-0">
                 <div className="col-12 col-md-4 d-flex align-items-center ">
                     <div className="mx-2 my-2" data-aos="flip-right">

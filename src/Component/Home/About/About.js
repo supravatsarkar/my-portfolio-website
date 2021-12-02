@@ -12,7 +12,7 @@ AOS.init({
 
 const About = () => {
     return (
-        <div className="container my-5 font-nunito">
+        <div className="container my-5 font-nunito" id="about">
             <div className="row m-0">
                 <div className="col d-none d-md-block col-md-2 col-lg-3"></div>
                 <div className="mx-2 m-md-0 d-flex align-items-center col col-md-8 col-lg-6 box text-light  ">
