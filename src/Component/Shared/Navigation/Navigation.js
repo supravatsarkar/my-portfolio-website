@@ -12,14 +12,14 @@ const Navigation = () => {
                     </button>
                     <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
-                            < NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" aria-current="page" to="/home#top-banner" style={{ textDecoration: 'none' }} activeClassName="selected"
+                            < NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light" aria-current="page" to="/home#top-banner" style={{ textDecoration: 'none' }} activeClassName="selected"
                                 activeStyle={{ color: 'red' }}>Home</NavHashLink>
-                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#skills" style={{ textDecoration: 'none' }} >Skills</NavHashLink>
-                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#projects" style={{ textDecoration: 'none' }} activeClassName="selected"
+                            <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light" to="/home#skills" style={{ textDecoration: 'none' }} >Skills</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light" to="/home#projects" style={{ textDecoration: 'none' }} activeClassName="selected"
                                 activeStyle={{ color: 'red' }}>Projects</NavHashLink>
-                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#about" style={{ textDecoration: 'none' }} activeClassName="selected"
+                            <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light" to="/home#about" style={{ textDecoration: 'none' }} activeClassName="selected"
                                 activeStyle={{ color: 'red' }}>About</NavHashLink>
-                            <NavHashLink className="px-2 py-1 border border-1 border-primary rounded me-2 my-1 bg-light" to="/home#contact" style={{ textDecoration: 'none' }} activeClassName="selected"
+                            <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light" to="/home#contact" style={{ textDecoration: 'none' }} activeClassName="selected"
                                 activeStyle={{ color: 'red' }}>Contact</NavHashLink>
 
                         </div>
