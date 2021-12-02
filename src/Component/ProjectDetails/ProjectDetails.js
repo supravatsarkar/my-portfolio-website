@@ -127,12 +127,17 @@ const ProjectDetails = () => {
     }, [projectId])
     return (
         <div className="container text-light py-5">
-            <div>
+            <div className="">
                 <h2 className="">Project Name: {project?.name}</h2>
                 <p>{project?.description}</p>
                 <h2>Technology Use</h2>
-                <p>{project?.technologyUse}</p>
-                <h2>Features</h2>
+                {/* <p>{project?.technologyUse}</p> */}
+                <div className="container d-flex flex-wrap mx-auto">
+                    {
+                        project?.technologyUse?.split(',')?.map(tech => <span className="border border-1 m-3 p-1 rounded">{tech}</span>)
+                    }
+                </div>
+                <h2 className="mt-3 ">Features</h2>
                 {
                     project?.feature?.map(point => <ul className="text-start">
                         <li>{point}</li>
@@ -145,8 +150,8 @@ const ProjectDetails = () => {
                         project?.serverSideRepo && <a href={project?.serverSideRepo} className="text-warning m-4" target="_blank" rel="noreferrer">Server Side Repo</a>
                     }
                 </div>
-                <div className="container ">
-                    <h2 className="mt-3">Screenshots</h2>
+                <div className="container mt-3 ">
+                    <h2 className="">Screenshots</h2>
                     <div className="row border border-2 border-warning p-4 rounded">
                         {
                             project?.images?.map((image, indx) => <div
@@ -161,7 +166,7 @@ const ProjectDetails = () => {
                 </div>
             </div>
             <Link to="/home">
-                <button className="btn btn-primary">Go to Home</button>
+                <button className="btn btn-primary my-3">Go to Home</button>
             </Link>
 
         </div>

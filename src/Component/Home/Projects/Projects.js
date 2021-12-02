@@ -1,7 +1,7 @@
 import React from 'react';
-import project1 from '../../../images/projects/project-1.png'
-import project2 from '../../../images/projects/project-2.png'
-import project3 from '../../../images/projects/project-3.png'
+import project1 from '../../../images/projects/project-1.jpg'
+import project2 from '../../../images/projects/project-2.jpg'
+import project3 from '../../../images/projects/project-3.jpg'
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -97,13 +97,13 @@ const Projects = () => {
                 {
                     projects.map(project => <div
                         key={project.id}
-                        className="col-12 col-md-4 " data-aos="flip-right">
-                        <div className="card border border-0 my-3" >
-                            <img src={project.images[0]} className="card-img-top img-fluid shadow " alt="..." />
-                            <div className="card-body text-primary">
+                        className="col-12 col-md-4 " >
+                        <div className="border border-1 border-light my-3 rounded" >
+                            <img data-aos="zoom-in" src={project.images[0]} className="card-img-top img-fluid rounded p-2" alt="..." />
+                            <div data-aos="fade-up" className="card-body text-light">
                                 <h5 className="card-title">{project.name}</h5>
                                 <p className="card-text">{project.description}</p>
-                                <Link to={`/projects/${project.id}`}>View Details</Link>
+                                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none' }}><button className="btn btn-light">Details</button></Link>
                             </div>
                         </div>
                     </div>

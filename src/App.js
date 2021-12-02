@@ -9,6 +9,8 @@ import {
 import ProjectDetails from './Component/ProjectDetails/ProjectDetails';
 import React, { useState } from 'react';
 import { WifiLoader } from "react-awesome-loaders";
+import Footer from './Component/Shared/Footer/Footer';
+import Navigation from './Component/Shared/Navigation/Navigation';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,6 +33,7 @@ function App() {
         </div>
           : <div className="App">
             <BrowserRouter>
+              <Navigation></Navigation>
               <Routes>
                 <Route path="/" element={<Home></Home>}>
                 </Route>
@@ -39,6 +42,7 @@ function App() {
                 <Route path="/projects/:projectId" element={<ProjectDetails></ProjectDetails>}>
                 </Route>
               </Routes>
+              <Footer></Footer>
             </BrowserRouter>
 
           </div>
