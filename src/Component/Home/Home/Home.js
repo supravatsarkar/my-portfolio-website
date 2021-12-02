@@ -9,7 +9,7 @@ import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     return (
-        <div style={{ minHeight: '3000px' }}>
+        <div >
             <TopBanner></TopBanner>
             <Skills></Skills>
             <Projects></Projects>

@@ -156,7 +156,7 @@ const ProjectDetails = () => {
                         {
                             project?.images?.map((image, indx) => <div
                                 key={indx}
-                                class="col-12 col-md-6 col-lg-4">
+                                className="col-12 col-md-6 col-lg-4">
                                 <div className="m-3" data-aos="flip-left">
                                     <img className="img-fluid" src={image} alt="" />
                                 </div>
