@@ -101,9 +101,9 @@ const Projects = () => {
                         <div className="border border-1 border-light my-3 rounded" >
                             <img data-aos="zoom-in" src={project.images[0]} className="card-img-top img-fluid rounded p-2" alt="..." />
                             <div data-aos="fade-up" className="card-body text-light">
-                                <h5 className="card-title">{project.name}</h5>
+                                <h5 className="card-title text-warning">{project.name}</h5>
                                 <p className="card-text">{project.description}</p>
-                                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none' }}><button className="btn btn-light">Details</button></Link>
+                                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none' }}><button className="btn btn-warning">Details</button></Link>
                             </div>
                         </div>
                     </div>

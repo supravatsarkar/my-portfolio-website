@@ -31,7 +31,7 @@ function App() {
             frontColor="#4645F6"
           />
         </div>
-          : <div className="App" style={{ background: '#324370' }}>
+          : <div className="App" style={{ background: 'rgb(33 37 41 / 78%)' }}>
             <BrowserRouter>
               <Navigation></Navigation>
               <Routes>

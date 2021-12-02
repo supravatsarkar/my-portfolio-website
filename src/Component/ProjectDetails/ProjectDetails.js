@@ -165,9 +165,9 @@ const ProjectDetails = () => {
                     </div>
                 </div>
             </div>
-            <Link to="/home">
+            {/* <Link to="/home">
                 <button className="btn btn-primary my-3">Go to Home</button>
-            </Link>
+            </Link> */}
 
         </div>
     );

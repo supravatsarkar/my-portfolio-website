@@ -22,7 +22,7 @@ const TopBanner = () => {
                             <p className="" data-aos="fade-up" data-aos-delay="400" data-aos-offset='10'>I am a self taught Computer Programmer and Frontend Developer. Passionate about coding and also fell well to fixed bugs.
                             </p>
                             <a href="https://drive.google.com/file/d/1YcEmXIJa0B_SpfMTHQ2JSv0PWHJitgVl/view?usp=sharing" target='_blank' rel='noreferrer'>
-                                <button type="button" className="btn btn-primary " data-aos="zoom-in-up" data-aos-delay="600" data-aos-offset='10'>Download Resume</button>
+                                <button type="button" className="btn btn btn-outline-warning" data-aos="zoom-in-up" data-aos-delay="600" data-aos-offset='10'>Download Resume</button>
                             </a>
                         </div>
                     </div>
