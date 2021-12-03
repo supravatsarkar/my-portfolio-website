@@ -3,6 +3,7 @@ import project1 from '../../../images/projects/project-1.jpg'
 import project2 from '../../../images/projects/project-2.jpg'
 import project3 from '../../../images/projects/project-3.jpg'
 import { Link } from "react-router-dom";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
@@ -99,11 +100,11 @@ const Projects = () => {
                         key={project.id}
                         className="col-12 col-md-4 " >
                         <div className="border border-1 border-light my-3 rounded" >
-                            <img data-aos="zoom-in" src={project.images[0]} className="card-img-top img-fluid rounded p-2" alt="..." />
+                            <img data-aos="zoom-in" src={project.images[0]} className="card-img-top img-fluid rounded-2 p-2" alt="..." />
                             <div data-aos="fade-up" className="card-body text-light">
                                 <h5 className="card-title text-warning">{project.name}</h5>
                                 <p className="card-text">{project.description}</p>
-                                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none' }}><button className="btn btn-warning">Details</button></Link>
+                                <Link to={`/projects/${project.id}`} style={{ textDecoration: 'none' }}><button className="btn btn-warning ">Details</button></Link>
                             </div>
                         </div>
                     </div>

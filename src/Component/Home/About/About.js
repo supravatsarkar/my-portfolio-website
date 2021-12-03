@@ -36,7 +36,6 @@ const About = () => {
                             <a href="https://github.com/supravatsarkar" className="text-decoration-none text-light fs-2 " target="_blank" rel="noreferrer" >
                                 <BsGithub />
                             </a>
-
                         </div>
                         {/* <button type="button" className="btn btn-warning mt-3">Hire Me</button> */}
                     </div>

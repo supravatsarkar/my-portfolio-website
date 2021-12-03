@@ -1,5 +1,10 @@
 import React from 'react';
 import '../TopBanner/TopBanner.css';
+import { BsFacebook } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+import { BsFillCloudArrowDownFill } from "react-icons/bs";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
@@ -21,8 +26,21 @@ const TopBanner = () => {
                             <h3 className=" " data-aos="fade-up" data-aos-delay="200" data-aos-offset='10'>Junior Frontend Developer</h3>
                             <p className="" data-aos="fade-up" data-aos-delay="400" data-aos-offset='10'>I am a self taught Computer Programmer and Frontend Developer. Passionate about coding and also fell well to fixed bugs.
                             </p>
+                            <div data-aos="zoom-in-up" data-aos-offset="0"
+                                data-aos-delay="1000"
+                                data-aos-duration="2000">
+                                <a href="https://www.facebook.com/supravat.sarkar" className="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer" >
+                                    <BsFacebook />
+                                </a>
+                                <a href="https://www.linkedin.com/in/supravat-sarkar-4660161b9/" className="text-decoration-none text-light fs-2 me-4" target="_blank" rel="noreferrer" >
+                                    <BsLinkedin />
+                                </a>
+                                <a href="https://github.com/supravatsarkar" className="text-decoration-none text-light fs-2 " target="_blank" rel="noreferrer" >
+                                    <BsGithub />
+                                </a>
+                            </div>
                             <a href="https://drive.google.com/file/d/1YcEmXIJa0B_SpfMTHQ2JSv0PWHJitgVl/view?usp=sharing" target='_blank' rel='noreferrer'>
-                                <button type="button" className="btn btn btn-outline-warning" data-aos="zoom-in-up" data-aos-delay="600" data-aos-offset='10'>Download Resume</button>
+                                <button type="button" className="btn btn btn-outline-warning mt-2" data-aos="zoom-in-up" data-aos-delay="600" data-aos-offset='10'> <BsFillCloudArrowDownFill className="me-1" />Download Resume</button>
                             </a>
                         </div>
                     </div>
