@@ -21,6 +21,8 @@ const Navigation = () => {
                                 activeStyle={{ color: 'red' }}>About</NavHashLink>
                             <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light bg-dark" to="/home#contact" style={{ textDecoration: 'none' }} activeClassName="selected"
                                 activeStyle={{ color: 'red' }}>Contact</NavHashLink>
+                            <NavHashLink className="px-2 py-1 border border-1 border-light rounded me-2 my-1 text-light bg-dark" to="/blog" style={{ textDecoration: 'none' }} activeClassName="selected"
+                                activeStyle={{ color: 'red' }}>Blog</NavHashLink>
 
                         </div>
                     </div>

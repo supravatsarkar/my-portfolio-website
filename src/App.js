@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 import { WifiLoader } from "react-awesome-loaders";
 import Footer from './Component/Shared/Footer/Footer';
 import Navigation from './Component/Shared/Navigation/Navigation';
+import Blog from './Component/Blog/Blog';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -31,7 +32,7 @@ function App() {
             frontColor="#4645F6"
           />
         </div>
-          : <div className="App" style={{ background: 'rgb(33 37 41 / 78%)' }}>
+          : <div className="App" style={{ background: 'rgb(33 37 41 / 78%)', minHeight: '100vh' }}>
             <BrowserRouter>
               <Navigation></Navigation>
               <Routes>
@@ -40,6 +41,8 @@ function App() {
                 <Route path="/home" element={<Home></Home>}>
                 </Route>
                 <Route path="/projects/:projectId" element={<ProjectDetails></ProjectDetails>}>
+                </Route>
+                <Route path="/blog" element={<Blog></Blog>}>
                 </Route>
               </Routes>
               <Footer></Footer>
